@@ -47,7 +47,7 @@ Contoh:
 john_doe dQw4w9WgXcQ 00:01:00 10 male USA caucasian 30
 jane_smith xYzAbc12345 00:02:30 15 female UK asian 25
 
-3. Jalankan pipeline utama
+### 2. Jalankan pipeline utama
 Jalankan script main_pipeline.py dari terminal di folder project root:
 
 python scripts/main_pipeline.py --num_workers 4 --min_confidence 0.8 --show_preview
@@ -57,14 +57,14 @@ python scripts/main_pipeline.py --num_workers 4 --min_confidence 0.8 --show_prev
 
 --show_preview: tampilkan preview deteksi wajah (opsional)
 
-4. Output
+### 3. Output
 Setelah selesai, folder output/ akan berisi:
 
 Subfolder per orang (sesuai nama di video_ids.txt) yang berisi video crop wajah pendek hasil pemrosesan.
 
 File metadata.csv yang berisi detail metadata tiap video crop (posisi wajah, atribut gender, umur, dll).
 
-Catatan
+### Catatan
 Video asli akan disimpan sementara di folder temp_downloads/ selama proses berlangsung dan otomatis dihapus setelah selesai.
 
 Pastikan koneksi internet stabil saat proses download YouTube.
